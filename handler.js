@@ -2,7 +2,7 @@
 const axios = require('axios').default
 const cheerio = require('cheerio')
 
-module.exports.run = async (event, context) => {
+module.exports.run = async () => {
   const body = new URLSearchParams({
     cimmotool_status: 1, // Available
   })
