@@ -1,0 +1,22 @@
+org: keis94
+app: akibeya-crawler
+service: akibeya-crawler
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  region: us-east-2
+  runtime: nodejs14.x
+  lambdaHashingVersion: 20201221
+  iam:
+    role: ${ssm(us-east-2):/akibeyaCrawler/executorRole}
+
+functions:
+  rateHandler:
+    handler: handler.run
+    environment:
+      LINE_CHANNEL_ACCESS_TOKEN: ${ssm(us-east-2):/akibeyaCrawler/lineChannelAccessToken}
+      LINE_GROUP_ID: ${ssm(us-east-2):/akibeyaCrawler/lineGroupId}
+    events:
+      - schedule: rate(5 minutes)

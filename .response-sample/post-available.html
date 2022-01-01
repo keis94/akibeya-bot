@@ -1,0 +1,129 @@
+
+
+	<div >
+		<script type="text/javascript">
+			
+			$(document).ready(function(){
+				//
+					cisSelect.build();
+				//
+				//
+				$('.list .row, area').mouseenter(function(){
+					var img = $(this).attr('data-over');
+					$('#cimmotool_image').attr('src',img);
+					var img2 = $(this).attr('data-over2');
+					$('#cimmotool_image2').attr('src',img2);
+				}).mouseleave(function(){
+					var img = $(this).attr('data-out');
+					$('#cimmotool_image').attr('src',img);
+					var img2 = $(this).attr('data-out2');
+					$('#cimmotool_image2').attr('src',img2);
+				});
+			});
+		</script>
+
+		
+		<div id="cimmotool_immotool_immotool_search" >
+			<div class="searchpanel">
+				<form class="ajaxform" method="post" name="cimmotool_immotool_immotool_form" id="cimmotool_immotool_immotool_form" action="#" data-action="cmd=cimmotool_immotool_immotool_search&amp;dsmid=509228" data-div="cimmotool_immotool_immotool_search">
+					
+					<div class="customselect">
+						<select name="cimmotool_objekt" id="cimmotool_objekt">
+							<option value="">- Building -</option>
+							
+						</select>
+						<div class="square fa"></div>
+					</div>
+
+					<div class="customselect">
+						<select name="cimmotool_etage" id="cimmotool_etage">
+							<option value="">- Floor -</option>
+							
+						</select>
+						<div class="square fa"></div>
+					</div>
+
+					<div class="customselect last">
+						<select name="cimmotool_status" id="cimmotool_status">
+							<option value="">- Status -</option>
+							
+								<option value="1" selected="selected">Status: Available</option>
+								
+								<option value="2" >Status: Reserved</option>
+								
+								<option value="3" >Status: Rented</option>
+								
+						</select>
+						<div class="square fa"></div>
+					</div>
+
+				</form>
+			</div>
+			
+			<div class="list">
+				<div class="header">
+					
+						<span class="spalte10" style="width:60px; text-align:left">
+							<a href="#" class="ajaxloader" data-div="cimmotool_immotool_immotool_search" data-url="cmd=cimmotool_immotool_immotool_search&sortby=spalte10&sortdir=ASC" data-scrolltodiv="cimmotool_immotool_immotool_search">House Nr. </a>
+						</span>
+						
+						<span class="spalte7" style="width:80px; text-align:left">
+							<a href="#" class="ajaxloader" data-div="cimmotool_immotool_immotool_search" data-url="cmd=cimmotool_immotool_immotool_search&sortby=spalte7&sortdir=ASC" data-scrolltodiv="cimmotool_immotool_immotool_search">App. Nr.</a>
+						</span>
+						
+						<span class="spalte4" style="width:70px; text-align:left">
+							<a href="#" class="ajaxloader" data-div="cimmotool_immotool_immotool_search" data-url="cmd=cimmotool_immotool_immotool_search&sortby=spalte4&sortdir=ASC" data-scrolltodiv="cimmotool_immotool_immotool_search">Room</a>
+						</span>
+						
+						<span class="spalte8" style="width:85px; text-align:left">
+							<a href="#" class="ajaxloader" data-div="cimmotool_immotool_immotool_search" data-url="cmd=cimmotool_immotool_immotool_search&sortby=spalte8&sortdir=ASC" data-scrolltodiv="cimmotool_immotool_immotool_search">Size</a>
+						</span>
+						
+						<span class="spalte1" style="width:50px; text-align:left">
+							<a href="#" class="ajaxloader" data-div="cimmotool_immotool_immotool_search" data-url="cmd=cimmotool_immotool_immotool_search&sortby=etage.sort&sortdir=ASC" data-scrolltodiv="cimmotool_immotool_immotool_search">Floor</a>
+						</span>
+						
+						<span class="spalte5" style="width:90px; text-align:left">
+							<a href="#" class="ajaxloader" data-div="cimmotool_immotool_immotool_search" data-url="cmd=cimmotool_immotool_immotool_search&sortby=spalte5&sortdir=ASC" data-scrolltodiv="cimmotool_immotool_immotool_search">Gross Rent</a>
+						</span>
+						
+						<span class="spalte11" style="width:80px; text-align:left">
+							<a href="#" class="ajaxloader" data-div="cimmotool_immotool_immotool_search" data-url="cmd=cimmotool_immotool_immotool_search&sortby=spalte11&sortdir=ASC" data-scrolltodiv="cimmotool_immotool_immotool_search">Charges</a>
+						</span>
+						
+						<span class="spalte6" style="width:90px; text-align:left">
+							<a href="#" class="ajaxloader" data-div="cimmotool_immotool_immotool_search" data-url="cmd=cimmotool_immotool_immotool_search&sortby=spalte6&sortdir=ASC" data-scrolltodiv="cimmotool_immotool_immotool_search">Start of rent</a>
+						</span>
+						
+						<span class="spalte2" style="width:80px; text-align:left">
+							<a href="#" class="ajaxloader" data-div="cimmotool_immotool_immotool_search" data-url="cmd=cimmotool_immotool_immotool_search&sortby=spalte2&sortdir=ASC" data-scrolltodiv="cimmotool_immotool_immotool_search">Status</a>
+						</span>
+						
+						<span class="spalte9" style="width:80px; text-align:left">
+							<a href="#" class="ajaxloader" data-div="cimmotool_immotool_immotool_search" data-url="cmd=cimmotool_immotool_immotool_search&sortby=spalte9&sortdir=ASC" data-scrolltodiv="cimmotool_immotool_immotool_search">Gender</a>
+						</span>
+						
+					<span class="icons">Contact</span>
+				</div>
+			</div>
+			
+			<div class="list scroll">
+				
+					<div class="row">
+						<span class="nodata">No record available</span>
+					</div>
+				
+			</div>
+			<div class="haftung">Changes and deviations from the published data and the building specification are expressly reserved. No liability.</div>
+
+			<div class="immolinks">
+				<ul class="dslinklist_0">
+					<li class="dslinklist_0">
+						<a target="_blank"  class="dslinklist_0" href="dynasite.cfm?cmd=cimmotool_pdf_pdf_print&amp;Adresse=&amp;Status=1&amp;Etage=&amp;Objektart=&amp;Zimmer=&amp;skipfurl=1">Print list</a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+	
