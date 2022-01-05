@@ -11,14 +11,14 @@ module.exports.run = async () => {
     body
   )
 
-  const doc = cheerio.load(response.data)
-  const output = doc(
-    '#cimmotool_immotool_immotool_search > div.list.scroll > div'
-  )
+  const tableText = cheerio
+    .load(response.data)(
+      '#cimmotool_immotool_immotool_search > div.list.scroll > div'
+    )
     .text()
     .trim()
 
-  if (output === 'No record available') {
+  if (tableText === 'No record available') {
     console.log('No available room')
     return
   }
