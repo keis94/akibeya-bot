@@ -19,4 +19,4 @@ functions:
       LINE_CHANNEL_ACCESS_TOKEN: ${ssm(us-east-2):/akibeyaCrawler/lineChannelAccessToken}
       LINE_GROUP_ID: ${ssm(us-east-2):/akibeyaCrawler/lineGroupId}
     events:
-      - schedule: rate(5 minutes)
+      - schedule: rate(2 minutes)
