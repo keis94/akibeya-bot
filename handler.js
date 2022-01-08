@@ -11,6 +11,8 @@ module.exports.run = async () => {
     body
   )
 
+  console.log(response.data)
+
   const tableText = cheerio
     .load(response.data)(
       '#cimmotool_immotool_immotool_search > div.list.scroll > div'
